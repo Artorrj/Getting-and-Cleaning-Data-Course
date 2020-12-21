@@ -1,4 +1,4 @@
-ibrary(dplyr)
+library(dplyr)
 filename <- "Coursera_DS3_Final.zip"
 
 # Checking if archieve already exists.
