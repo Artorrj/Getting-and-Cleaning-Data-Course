@@ -45,8 +45,8 @@ names(TidyData)<-gsub("angle", "Angle", names(TidyData))
 names(TidyData)<-gsub("gravity", "Gravity", names(TidyData))
 
 FinalData <- TidyData %>%
-    group_by(subject, activity) %>%
-    summarise_all(funs(mean))
+  group_by(subject, activity) %>%
+  summarise_all(funs(mean))
 write.table(FinalData, "FinalData.txt", row.name=FALSE)
 
 str(FinalData)
